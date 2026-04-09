@@ -40,7 +40,7 @@ header {
 
 #menu-hamburg {
     top: var(--header-height);
-    left: 0;
+    left: -100vw;
     width: 100vw;
     position: absolute;
     display: flex;
@@ -48,14 +48,12 @@ header {
     align-items: center;
     gap: 1.5rem;
     padding: var(--gap-size);
-    opacity: 0;
-    pointer-events: none;
-    transition: all var(--animation-time);
     background-color: var(--background-color-primary);
     font-size: 1.2rem;
+    transition: all var(--animation-time);
 
     &.active {
-        opacity: 1;
+        left: 0;
         pointer-events: fill;
     }
 }
@@ -66,7 +64,6 @@ header {
     }
     
     #menu-hamburg {
-        opacity: 1;
         position: static;
         display: flex;
         padding: 0;
