@@ -53,14 +53,13 @@ header {
     flex-direction: row;
     align-items: center;
     gap: var(--gap-size);
-
-    svg {
-        width: 1.5rem;
-        height: auto;
-        cursor: pointer;
-    }
 }
 
+#icon-menu-hamburg {
+    width: 1.5rem;
+    height: auto;
+    cursor: pointer;
+}
 
 #btn-book-service {
     margin-left: auto;
@@ -107,7 +106,7 @@ header {
 }
 
 @media (min-width: 768px) {
-    header svg {
+    #icon-menu-hamburg {
         display: none;
     }
     
