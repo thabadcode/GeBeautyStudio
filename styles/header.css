@@ -14,6 +14,17 @@ header {
     width: 1.5rem;
     height: auto;
     cursor: pointer;
+
+    &.active {
+        #top-bar { transform: translate(0, -4%) rotate(-45deg); }
+        #middle-bar { transform: translate(-7%, 0); }
+        #bottom-bar { transform: translate(0, 4%) rotate(45deg); }
+    }
+}
+
+#top-bar, #bottom-bar {
+    transition: all var(--animation-time);
+    transform-origin: center;
 }
 
 #btn-book-service {
