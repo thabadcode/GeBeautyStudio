@@ -1,6 +1,7 @@
 :root {
     --background-color-primary: #f2c4a8;
     --background-color-secondary: #f7d9c4;
+    --background-color-body: #fff5f0;
     --background-btn-color: #d98e73;
     --text-color-primary: #5c3d2e;
 
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-    background-color: var(--background-color-secondary);
+    background-color: var(--background-color-body);
 }
 
 main {
