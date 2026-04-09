@@ -25,8 +25,6 @@ body {
     background-color: var(--background-color-secondary);
 }
 
-/* Header */
-
 a {
     text-decoration: none;
 }
@@ -41,82 +39,4 @@ button {
     border-style: none;
     padding: 1rem;
     background-color: var(--background-btn-color);
-}
-
-header {
-    position: absolute;
-    width: 100vw;
-    height: var(--header-height);
-    background-color: var(--background-color-primary);
-    padding: var(--gap-size);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-size);
-}
-
-#icon-menu-hamburg {
-    width: 1.5rem;
-    height: auto;
-    cursor: pointer;
-}
-
-#btn-book-service {
-    margin-left: auto;
-}
-
-#enterprise-presentation {
-    display: flex;
-    align-items: center;
-    gap: var(--gap-size);
-
-    img {
-        width: 3.5rem;
-        height: auto;
-        border-radius: 0.3rem;
-    }
-    
-    span {
-        font-weight: bold;
-        white-space: nowrap;
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-    }
-}
-
-#menu-hamburg {
-    top: var(--header-height);
-    left: 0;
-    width: 100vw;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: var(--gap-size);
-    opacity: 0;
-    pointer-events: none;
-    transition: all var(--animation-time);
-    background-color: var(--background-color-primary);
-    font-size: 1.2rem;
-
-    &.active {
-        opacity: 1;
-        pointer-events: fill;
-    }
-}
-
-@media (min-width: 768px) {
-    #icon-menu-hamburg {
-        display: none;
-    }
-    
-    #menu-hamburg {
-        opacity: 1;
-        position: static;
-        display: flex;
-        padding: 0;
-        flex-direction: row;
-        background-color: none;
-        gap: var(--gap-size);
-    }
 }
