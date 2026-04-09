@@ -61,6 +61,7 @@ header {
     }
 }
 
+
 #btn-book-service {
     margin-left: auto;
 }
@@ -83,7 +84,7 @@ header {
     }
 }
 
-nav {
+#menu-hamburg {
     top: var(--header-height);
     left: 0;
     width: 100vw;
@@ -97,9 +98,9 @@ nav {
     pointer-events: none;
     transition: all var(--animation-time);
     background-color: var(--background-color-primary);
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 
-    &:active {
+    &.active {
         opacity: 1;
         pointer-events: fill;
     }
@@ -110,7 +111,7 @@ nav {
         display: none;
     }
     
-    nav {
+    #menu-hamburg {
         opacity: 1;
         position: static;
         display: flex;
