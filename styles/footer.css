@@ -1,0 +1,30 @@
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;;
+}
+
+#footer-top {
+    height: var(--header-height);
+    background-color: var(--background-color-primary);
+    padding: var(--gap-size);
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 3.5rem;
+        height: auto;
+        border-radius: 0.3rem;
+    }
+}
+
+#footer-middle {
+    background-color: --background-color-secondary;
+}
+
+#footer-bottom {
+    background-color: var(--background-color-primary);
+    padding: var(--gap-size);
+    color: var(--text-color-primary);
+    font-size: 0.8rem;
+}
