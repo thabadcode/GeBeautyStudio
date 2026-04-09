@@ -25,6 +25,10 @@ body {
     background-color: var(--background-color-secondary);
 }
 
+main {
+    margin-top: var(--header-height);
+}
+
 a {
     text-decoration: none;
 }
