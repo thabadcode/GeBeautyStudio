@@ -29,6 +29,25 @@ footer {
     flex-direction: column;
 }
 
+#instagram {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    border-radius: var(--gap-size);
+    padding: var(--gap-size);
+    background-color: var(--background-btn-color);
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: var(--text-color-secondary);
+    }
+
+    span {
+        display: none;
+    }
+}
+
 #footer-middle {
     background-color: --background-color-secondary;
 }
@@ -40,3 +59,10 @@ footer {
     font-size: 0.8rem;
 }
 
+@media (min-width: 500px) {
+    #instagram span {
+        width: 5rem;
+        display: block;
+        white-space: wrap;
+    }
+}
