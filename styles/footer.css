@@ -49,7 +49,32 @@ footer {
 }
 
 #footer-middle {
-    background-color: --background-color-secondary;
+    background-color: var(--background-color-secondary);
+    padding: var(--gap-size);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+    color: var(--text-color-primary);
+
+    div {
+        max-width: 40ch;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-size);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap-size);
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
 #footer-bottom {
@@ -63,5 +88,12 @@ footer {
     #instagram span {
         max-width: 10ch;
         display: block;
+    }
+}
+
+@media (min-width: 485px) {
+    #footer-middle {
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
