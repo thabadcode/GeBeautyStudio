@@ -61,8 +61,7 @@ footer {
 
 @media (min-width: 500px) {
     #instagram span {
-        width: 5rem;
+        max-width: 10ch;
         display: block;
-        white-space: wrap;
     }
 }
