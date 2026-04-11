@@ -66,9 +66,14 @@ footer {
     ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: var(--gap-size);
         list-style-type: none;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-size);
     }
 
     a {
