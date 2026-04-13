@@ -59,6 +59,7 @@ button {
     width: 4rem;
     height: 4rem;
     padding: var(--gap-size);
+    z-index: 10;
 
     svg {
         width: 2.5rem;

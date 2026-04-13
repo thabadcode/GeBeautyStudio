@@ -10,6 +10,7 @@ header {
     flex-direction: row;
     align-items: center;
     gap: var(--gap-size);
+    z-index: 10;
 }
 
 #icon-menu-hamburg {
