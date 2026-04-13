@@ -46,3 +46,27 @@ button {
     padding: 1rem;
     background-color: var(--background-btn-color);
 }
+
+#btn-wpp {
+    position: fixed;
+    bottom: var(--gap-size);
+    right: var(--gap-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #25D366;
+    width: 4rem;
+    height: 4rem;
+    padding: var(--gap-size);
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #FFFFFF;
+    }
+
+    &.stop {
+        position: absolute;
+    }
+}
