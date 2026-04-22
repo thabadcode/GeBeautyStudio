@@ -3,27 +3,20 @@ const menuHamburg = document.getElementById('menu-hamburg');
 const backdrop = document.getElementById('backdrop');
 
 iconMenuHamburg.addEventListener('click', () => {
-    if (menuHamburg.classList.add('active')) closeMenu();
-    else showMenu();
+    const isOpen = menuHamburg.classList.contains('active')
+    toggleStateMenu(isOpen ? 'remove' : 'add');
 });
 
 menuHamburg.addEventListener('click', (event) => {
     const elementClicked = event.target.closest('a');
-    if (elementClicked) closeMenu();
+    if (elementClicked) toggleStateMenu('remove')
 })
 
-backdrop.addEventListener('click', () => { closeMenu() });
+backdrop.addEventListener('click', () => { toggleStateMenu('remove') });
 
-function showMenu() {
-    menuHamburg.classList.add('active');
-    iconMenuHamburg.classList.add('active');
-    backdrop.classList.add('active');
-    document.body.classList.add('stop-scroll');
-}
-
-function closeMenu() {
-     menuHamburg.classList.remove('active');
-    iconMenuHamburg.classList.remove('active');
-    backdrop.classList.remove('active');
-    document.body.classList.remove('stop-scroll');
+function toggleStateMenu(action) {
+    menuHamburg.classList[action]('active');
+    iconMenuHamburg.classList[action]('active');
+    backdrop.classList[action]('active');
+    document.body.classList[action]('stop-scroll');
 }
