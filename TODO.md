@@ -13,3 +13,4 @@
 - [X] Fazer links externos abrirem em outra aba
 - [X] Adicionar conteúdo ds sessão "Onde estou"
 - [X] Implementar rolagem dinâmica do botão do WhatsApp
+- [X] Adicionar conteúdo ds sessão "Sobre mim"
